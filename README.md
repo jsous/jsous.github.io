@@ -60,6 +60,18 @@ http://127.0.0.1:4000/
 - Edit styles in `assets/css/style.scss`
 - Edit placeholder images in `assets/images/`
 
+## GoatCounter
+
+- GoatCounter tracking is wired into `_layouts/default.html`
+- The visible counter is shown only on `index.html`
+- To enable it, set `goatcounter_site` in `_config.yml`:
+
+```yml
+goatcounter_site: "YOURCODE.goatcounter.com"
+```
+
+- In GoatCounter settings, enable visitor counters if you want the visible homepage counter to appear
+
 ## Useful Notes
 
 - The generated site output lives in `_site/`.

@@ -16,5 +16,37 @@
         {{ content }}
       </div>
     </main>
+
+    {% if site.goatcounter_site and site.goatcounter_site != "" %}
+      <script
+        data-goatcounter="https://{{ site.goatcounter_site }}/count"
+        async
+        src="//gc.zgo.at/count.js"></script>
+
+      {% if page.url == '/' %}
+        <script>
+          window.addEventListener('load', function () {
+            var tries = 0;
+            var timer = setInterval(function () {
+              if (window.goatcounter && window.goatcounter.visit_count) {
+                clearInterval(timer);
+                window.goatcounter.visit_count({
+                  append: '#goatcounter-home-visits',
+                  type: 'html',
+                  no_branding: true,
+                  attr: {
+                    class: 'goatcounter-widget'
+                  }
+                });
+              } else if (tries > 100) {
+                clearInterval(timer);
+              }
+
+              tries += 1;
+            }, 100);
+          });
+        </script>
+      {% endif %}
+    {% endif %}
   </body>
 </html>

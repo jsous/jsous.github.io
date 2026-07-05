@@ -212,6 +212,23 @@ p {
   color: #253240;
 }
 
+.hero__traffic {
+  margin-top: 1.25rem;
+  min-height: 2.25rem;
+}
+
+.goatcounter-widget {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.25rem;
+  padding: 0.45rem 0.85rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  color: var(--muted);
+  font-size: 0.95rem;
+  background: rgba(255, 255, 255, 0.65);
+}
+
 .profile-card,
 .overview-card {
   background: var(--surface);
