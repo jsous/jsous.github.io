@@ -1,0 +1,15 @@
+<svg width="960" height="720" viewBox="0 0 960 720" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Placeholder lab image</title>
+  <desc id="desc">Abstract placeholder artwork for a portrait, lab image, or future group photo.</desc>
+  <rect width="960" height="720" fill="#EEF3F6"/>
+  <rect x="64" y="64" width="832" height="592" rx="32" fill="#F8FBFD"/>
+  <circle cx="268" cy="256" r="96" fill="#DCE6EE"/>
+  <path d="M156 532C181.922 448.228 259.899 388 352 388C444.101 388 522.078 448.228 548 532V560H156V532Z" fill="#DCE6EE"/>
+  <rect x="586" y="188" width="214" height="20" rx="10" fill="#C9D7E3"/>
+  <rect x="586" y="250" width="282" height="20" rx="10" fill="#D7E2EB"/>
+  <rect x="586" y="312" width="240" height="20" rx="10" fill="#D7E2EB"/>
+  <rect x="586" y="404" width="146" height="18" rx="9" fill="#114B7A" fill-opacity="0.18"/>
+  <rect x="586" y="446" width="188" height="18" rx="9" fill="#114B7A" fill-opacity="0.14"/>
+  <rect x="586" y="488" width="126" height="18" rx="9" fill="#114B7A" fill-opacity="0.1"/>
+</svg>
+

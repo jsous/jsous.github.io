@@ -1,0 +1,13 @@
+<svg width="640" height="480" viewBox="0 0 640 480" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Placeholder member portrait B</title>
+  <desc id="desc">Abstract placeholder portrait artwork for a future member profile.</desc>
+  <rect width="640" height="480" fill="#EFF4F7"/>
+  <rect x="36" y="36" width="568" height="408" rx="28" fill="#FBFDFC"/>
+  <circle cx="214" cy="176" r="62" fill="#E4DCD6"/>
+  <path d="M126 370C143.927 314.462 196.506 276 260 276C323.494 276 376.073 314.462 394 370V390H126V370Z" fill="#E4DCD6"/>
+  <rect x="402" y="132" width="148" height="16" rx="8" fill="#D1DCE6"/>
+  <rect x="402" y="182" width="170" height="16" rx="8" fill="#DEE7EE"/>
+  <rect x="402" y="232" width="142" height="16" rx="8" fill="#DEE7EE"/>
+  <rect x="402" y="302" width="112" height="14" rx="7" fill="#6B866A" fill-opacity="0.2"/>
+</svg>
+
