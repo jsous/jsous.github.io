@@ -2,8 +2,16 @@
 ---
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600&display=swap");
 
+@font-face {
+  font-family: "YaleNew";
+  src: url("../fonts/yalenew-roman-webfont.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
 :root {
-  --bg: #f4f7f8;
+  --bg: #ffffff;
   --surface: rgba(255, 255, 255, 0.9);
   --surface-strong: #ffffff;
   --text: #18222c;
@@ -34,9 +42,7 @@ body {
   color: var(--text);
   font-family: "Source Sans 3", "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 1.7;
-  background:
-    radial-gradient(circle at top right, rgba(17, 75, 122, 0.1), transparent 32%),
-    linear-gradient(180deg, #fbfcfd 0%, var(--bg) 100%);
+  background: var(--bg);
 }
 
 img {
@@ -104,7 +110,7 @@ p {
   top: 0;
   z-index: 10;
   backdrop-filter: blur(10px);
-  background: rgba(251, 252, 253, 0.85);
+  background: rgba(255, 255, 255, 0.92);
   border-bottom: 1px solid rgba(215, 224, 231, 0.85);
 }
 
@@ -114,6 +120,37 @@ p {
   justify-content: space-between;
   gap: 1.5rem;
   padding: 0.72rem 0;
+}
+
+.site-header__brand {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.yale-mark {
+  position: absolute;
+  right: calc(100% + 0.75rem);
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 3rem;
+  height: 2rem;
+  color: #00356b;
+  font-family: "YaleNew", "Iowan Old Style", Georgia, serif;
+  font-size: 2.1rem;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.yale-mark:hover {
+  color: #00356b;
+}
+
+.yale-mark:focus-visible {
+  outline: 3px solid rgba(17, 75, 122, 0.35);
+  outline-offset: 3px;
 }
 
 .site-nav {
@@ -304,7 +341,7 @@ p {
   font-size: clamp(2.2rem, 5vw, 3.4rem);
 }
 
-.page-copy > :not(.people-section) {
+.page-copy > * {
   max-width: var(--measure);
 }
 
@@ -312,19 +349,111 @@ p {
   margin-bottom: 0;
 }
 
-.people-section {
+.post,
+.post-list {
+  max-width: var(--measure);
+}
+
+.post-header {
+  margin-bottom: 2.5rem;
+}
+
+.post-header h1 {
+  max-width: 18ch;
+  margin-bottom: 0.8rem;
+  font-size: clamp(2.4rem, 6vw, 4rem);
+}
+
+.post-subtitle {
+  max-width: 52rem;
+  margin-bottom: 0.7rem;
+  color: #3f3f3f;
+  font-family: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Georgia, serif;
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+.post-meta {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.post-copy h2 {
+  margin: 2.75rem 0 1rem;
+  padding-bottom: 0.35rem;
+  border-bottom: 1px solid var(--border);
+  font-size: clamp(1.55rem, 3vw, 1.9rem);
+}
+
+.post-copy blockquote {
+  margin: 1.75rem 0;
+  padding-left: 1.25rem;
+  border-left: 3px solid var(--border);
+  color: #3f3f3f;
+  font-family: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Georgia, serif;
+  font-size: 1.08em;
+}
+
+.post-copy table {
+  width: 100%;
+  margin: 1.75rem 0;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.post-copy th,
+.post-copy td {
+  padding: 0.65rem 0.75rem;
+  border-bottom: 1px solid var(--border);
+  text-align: left;
+}
+
+.post-copy th {
+  font-weight: 600;
+}
+
+.post-list {
   margin-top: 2.5rem;
 }
 
-.people-section > h2 {
-  margin-bottom: 1rem;
-  font-size: clamp(1.5rem, 3vw, 1.9rem);
+.post-list__item {
+  padding: 1.5rem 0;
+  border-top: 1px solid var(--border);
+}
+
+.post-list__item h2 {
+  margin: 0.25rem 0 0.5rem;
+  font-size: clamp(1.4rem, 3vw, 1.75rem);
+}
+
+.post-list__item h2 a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.post-list__item h2 a:hover {
+  color: var(--accent);
+}
+
+.post-list__item time {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.post-list__item p {
+  margin-bottom: 0;
+  color: var(--muted);
 }
 
 .people-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1.5rem;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 2rem 1.5rem;
+  margin: 2rem 0 0;
+}
+
+.page-copy > .people-grid {
+  max-width: none;
 }
 
 .person-card {
@@ -333,7 +462,7 @@ p {
 
 .person-card img {
   width: 100%;
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 1 / 1;
   object-fit: cover;
   margin-bottom: 0.9rem;
   border: 1px solid var(--border);
@@ -341,13 +470,16 @@ p {
   background: linear-gradient(180deg, #edf4f7 0%, #e3ebf0 100%);
 }
 
-.person-card h3 {
+.person-card h2 {
   margin-bottom: 0.35rem;
   font-size: 1.2rem;
 }
 
 .person-card p {
-  margin-bottom: 0;
+  margin-bottom: 0.3rem;
+}
+
+.person-card__role {
   color: var(--muted);
 }
 
@@ -372,6 +504,13 @@ p {
   .site-nav {
     width: 100%;
     justify-content: space-between;
+  }
+
+  .yale-mark {
+    right: calc(100% + 0.1rem);
+    width: 1.65rem;
+    height: 1.1rem;
+    font-size: 1.25rem;
   }
 
   .site-nav__group--external {
@@ -409,5 +548,10 @@ p {
 
   .page-shell {
     padding: 1.5rem;
+  }
+
+  .post-copy table {
+    display: block;
+    overflow-x: auto;
   }
 }

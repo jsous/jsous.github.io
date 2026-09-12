@@ -2,9 +2,14 @@
 layout: page
 title: Blog Posts
 permalink: /blog-posts/
-lead: Placeholder space for future updates, notes, and lab writing.
 ---
 
-This page is reserved for future blog posts or short updates. It can later include research notes, announcements, commentary, or writing from the group.
-
-For now, the content remains intentionally minimal so the section exists without adding real posts yet.
+<div class="post-list">
+  {% for post in site.posts %}
+    <article class="post-list__item">
+      <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %-d, %Y" }}</time>
+      <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+      {% if post.subtitle %}<p>{{ post.subtitle }}</p>{% endif %}
+    </article>
+  {% endfor %}
+</div>

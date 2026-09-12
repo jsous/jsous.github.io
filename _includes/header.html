@@ -1,6 +1,11 @@
 <header class="site-header">
   <div class="container site-header__inner">
-    <a class="site-nav__link site-nav__link--home" href="{{ '/' | relative_url }}"{% if page.url == '/' %} aria-current="page"{% endif %}>Home</a>
+    <div class="site-header__brand">
+      <a class="yale-mark" href="https://www.yale.edu/" rel="noreferrer" aria-label="Yale University" title="Yale University">
+        <span aria-hidden="true">Y</span>
+      </a>
+      <a class="site-nav__link site-nav__link--home" href="{{ '/' | relative_url }}"{% if page.url == '/' %} aria-current="page"{% endif %}>Home</a>
+    </div>
 
     <nav class="site-nav" aria-label="Primary">
       <div class="site-nav__group">
