@@ -1,8 +1,16 @@
 title: John Sous
-description: Minimal starter website for the John Sous research lab at Yale University.
-affiliation: Yale University
+description: Essays on physics, research, and scientific practice.
 lang: en
 baseurl: ""
-url: ""
+url: "https://jsous.github.io"
 permalink: pretty
-goatcounter_site: ""
+
+exclude:
+  - .bundle
+  - .jekyll-cache
+  - .sass-cache
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - drafts
+  - vendor

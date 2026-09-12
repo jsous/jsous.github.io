@@ -5,6 +5,7 @@ subtitle: "Expert re-grading, broken benchmarks, and what frontier models can an
 author: "John Sous"
 date: 2026-09-11 12:00:00 -0400
 description: "What an expert audit of physics benchmarks reveals about frontier models, evaluation, and the parts of physics that remain difficult."
+permalink: /blogs/is-physics-dead/
 ---
 
 > *Physics is dead. Physics remains dead. And we have killed it.*

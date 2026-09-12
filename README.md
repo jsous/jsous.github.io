@@ -1,79 +1,30 @@
-# jsous.github.io
+# Temporary blog-only deployment
 
-Minimal Jekyll starter site for John Sous' research lab at Yale University.
+This branch intentionally publishes only the following article:
 
-## Requirements
-
-- Ruby 3.3+
-- Bundler
-
-On this machine, the Homebrew Ruby toolchain is used:
-
-```zsh
-ruby -v
-bundle -v
+```text
+https://jsous.github.io/blogs/is-physics-dead/
 ```
 
-## Install Dependencies
+The complete lab website remains on the `main` branch and should not be used as
+the GitHub Pages source yet.
 
-From the repository root, install the Jekyll and GitHub Pages gems:
+## Build locally
 
 ```zsh
 bundle install
-```
-
-## Build The Site
-
-Generate the static site into `_site/`:
-
-```zsh
-bundle exec jekyll build
-```
-
-## Preview Locally
-
-Start a local development server:
-
-```zsh
 bundle exec jekyll serve
 ```
 
-Then open:
+Preview the article at:
 
 ```text
-http://127.0.0.1:4000/
+http://127.0.0.1:4000/blogs/is-physics-dead/
 ```
 
-## Edit Content
+## Publish temporarily
 
-- Edit section pages in `pages/*.md`
-- Current section pages live in:
-  - `pages/about.md`
-  - `pages/vitae.md`
-  - `pages/people.md`
-  - `pages/research.md`
-  - `pages/publications.md`
-  - `pages/blog-posts.md`
-- Edit the homepage in `index.html`
-- Edit the top navigation in `_includes/header.html`
-- Edit site-wide layout wrappers in `_layouts/`
-- Edit styles in `assets/css/style.scss`
-- Edit placeholder images in `assets/images/`
+In the repository's GitHub Pages settings, select **Deploy from a branch**, then
+choose `tmp-blog-is-physics-dead` and `/(root)`.
 
-## GoatCounter
-
-- GoatCounter tracking is wired into `_layouts/default.html`
-- The visible counter is shown only on `index.html`
-- To enable it, set `goatcounter_site` in `_config.yml`:
-
-```yml
-goatcounter_site: "YOURCODE.goatcounter.com"
-```
-
-- In GoatCounter settings, enable visitor counters if you want the visible homepage counter to appear
-
-## Useful Notes
-
-- The generated site output lives in `_site/`.
-- Local gems are installed under `vendor/bundle/`.
-- This setup is compatible with standard GitHub Pages Jekyll workflows.
+When the full site is ready, change the publishing branch back to `main`.
