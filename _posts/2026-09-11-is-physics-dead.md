@@ -32,9 +32,6 @@ We started by trying to understand where the models failed. We collected rejecte
 
 We were surprised!
 
-![Pre-audit and corrected accuracy on six physics benchmarks](/assets/benchmark_accuracy.png)
- *Light bars are pre-audit scores, solid bars are scores after correction.*
-
  <figure>
   <img src="{{ '/assets/benchmark_accuracy.png' | relative_url }}" alt="Pre-audit and corrected accuracy on six physics benchmarks">
   <figcaption style="font-size: 0.9em; color: #666; text-align: center;">Light bars are pre-audit scores, solid bars are scores after correction.</figcaption>
