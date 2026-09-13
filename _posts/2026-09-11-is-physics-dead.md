@@ -9,10 +9,7 @@ permalink: /blogs/is-physics-dead/
 ---
 
 > *Physics is dead. Physics remains dead. And we have killed it.* 
->
-> Nietzsche, more or less
->
-> Really?
+
 Anyone who works with frontier models knows two things at once. They can do astonishing things, and they drift. Over a long session they can lose the thread, forget what they have established, and struggle to identify the next useful step in a research project. Both things are true, and anyone who has spent a week with an agent on a hard problem has felt both.
 
 So what about physics?
