@@ -35,6 +35,11 @@ We were surprised!
 ![Pre-audit and corrected accuracy on six physics benchmarks](/assets/benchmark_accuracy.png)
  *Light bars are pre-audit scores, solid bars are scores after correction.*
 
+ <figure>
+  <img src="{{ '/assets/benchmark_accuracy.png' | relative_url }}" alt="Pre-audit and corrected accuracy on six physics benchmarks">
+  <figcaption style="font-size: 0.9em; color: #666; text-align: center;">Light bars are pre-audit scores, solid bars are scores after correction.</figcaption>
+</figure>
+
 First, the evaluation pipeline was rejecting correct answers written in equivalent forms. Second, many benchmark items were defective. We found incorrect arithmetic in reference answers, questions that omitted information needed to choose among the answers, and physics problems whose results depended on unstated conventions. Perhaps most surprising, these issues were common even in expert-curated benchmarks, including those featured on Artificial Analysis such as the physics component of Humanity's Last Exam (HLE) and CritPt.[^1]
 
 So we decided to scale up. We worked with faculty members and their students at Yale, assigning every individual one or more questions in their field, and implemented a rigorous audit process. We audited every question and repaired problems whenever a repair was possible. Thirty of 50 CMT-Benchmark questions had a defect, as did 21 of the 56 CritPt questions we audited. After correcting graders and repairing or excluding flawed questions, the measured results changed sharply:
