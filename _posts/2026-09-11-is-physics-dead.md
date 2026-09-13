@@ -8,7 +8,9 @@ description: "What an expert audit of physics benchmarks reveals about frontier 
 permalink: /blogs/is-physics-dead/
 ---
 
-> *Physics is dead. Physics remains dead. And we have killed it.* 
+> *Physics is dead. Physics remains dead. And we have killed it.*
+
+Is it?
 
 Anyone who works with frontier models knows two things at once. They can do astonishing things, and they drift. Over a long session they can lose the thread, forget what they have established, and struggle to identify the next useful step in a research project. Both things are true, and anyone who has spent a week with an agent on a hard problem has felt both.
 
