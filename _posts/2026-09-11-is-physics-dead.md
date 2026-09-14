@@ -7,7 +7,7 @@ date: 2026-09-11 12:00:00 -0400
 description: "What an expert audit of physics benchmarks reveals about frontier models, evaluation, and the parts of physics that remain difficult."
 permalink: /blogs/is-physics-dead/
 ---
-*Based on [How Good Are Frontier Models at Physics? Expert Re-Grading Reveals Broken Evaluations and Near-Saturation of Leading Benchmarks](https://arxiv.org/abs/arXiv:2609.13009), arXiv:arXiv:2609.13009. Thanks to my co-authors Ali Ansari, Haoran Sun, Andy Zeyi Liu, Mark Jabbour, Lucas Baker, and Arman Cohan, and to the Yale physics faculty and graduate researchers who carried out the audits.*
+*Based on [How Good Are Frontier Models at Physics? Expert Re-Grading Reveals Broken Evaluations and Near-Saturation of Leading Benchmarks](https://arxiv.org/abs/arXiv:2609.13009), arXiv:2609.13009. Thanks to my co-authors Ali Ansari, Haoran Sun, Andy Zeyi Liu, Mark Jabbour, Lucas Baker, and Arman Cohan, and to the Yale physics faculty and graduate researchers who carried out the audits.*
 
 > *Physics is dead. Physics remains dead. And we have killed it.*
 
