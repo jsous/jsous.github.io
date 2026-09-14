@@ -1,15 +1,20 @@
 ---
 layout: post
 title: "Is Physics Dead?"
-subtitle: "Broken benchmarks, and what frontier models can and cannot do in physics"
+subtitle: "Broken benchmarks, and re-evaluating the capabilities of frontier models in physics"
 author: "John Sous"
-date: 2026-09-11 12:00:00 -0400
+date: 2026-09-14 12:00:00 -0400
 description: "An expert audit of physics benchmarks."
 permalink: /blogs/is-physics-dead/
 ---
 *Based on [How Good Are Frontier Models at Physics? Expert Re-Grading Reveals Broken Evaluations and Near-Saturation of Leading Benchmarks](https://arxiv.org/abs/2609.13009), arXiv:2609.13009. Thanks to my co-authors Ali Ansari, Haoran Sun, Andy Zeyi Liu, Mark Jabbour, Lucas Baker, and Arman Cohan, and to the Yale physics faculty and graduate researchers who carried out the audits.*
 
 > *Physics is dead.*
+> (not Friedrich Nietzche)
+
+AI has already come for mathematics. What of physics?
+
+Anyone who has spent time working with frontier AI models knows that they are capable of astonishing feats of reason, but also of equally shocking mistakes and naïveté. Within the context a research project they still drift, make inconsistent choices, forget previously establish work, and often struggle to identify the next meaningful step despite know the mechanics.
 
 Frontier models can do astonishing things. They also drift. Over a long session they can lose focus, forget the main agenda, and struggle to identify the next useful step in a research project.
 
