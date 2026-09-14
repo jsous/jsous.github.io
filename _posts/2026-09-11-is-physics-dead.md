@@ -24,13 +24,13 @@ It was tempting to believe that result. Most of the time, the hardest part of ph
 
 There is an old joke about a physicist hired to help a dairy farm who begins with "assume a spherical cow." The joke is on us, but it also captures the craft: physics is the art of finding the idealization that discards almost everything about a problem while preserving exactly what matters. For example, in 1983, Robert Laughlin wanted to explain the fractional quantum Hall effect. The direct approach would have required solving the Schrödinger equation for a vast number of strongly interacting electrons, which is undoable. Instead, Laughlin guessed a many-electron wavefunction with the right symmetry and limiting behavior. His guess was correct, and for it he received the Nobel Prize. Another great example is how Kenneth Wilson and Michael Fisher implemented a brilliant idea for studying phase transitions, where they treated a problem in three spatial dimensions through an expansion around four dimensions, solved it in 4 − ε dimensions, and then set ε = 1. These are not just calculations. They may omit a certain form of rigor, nonetheless they have the quality of being determined by an intuition about which calculation might expose the underlying physics.
 
-After all, perhaps the low leaderboard scores meant that even then, physics remained beyond the models.
+After all, perhaps the low leaderboard scores meant that physics remained beyond the models.
 
 ## What actually happened
 
 We started by trying to understand where the models failed. We collected rejected answers, then handed them to physicists (my amazing students) and asked them to check the grading. 
 
-We were surprised!
+We were surprised by what we found!
 
 <figure>
   <img src="/assets/benchmark_accuracy.png" alt="Pre-audit and corrected accuracy on six physics benchmarks" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
@@ -39,7 +39,7 @@ We were surprised!
 
 First, the evaluation pipeline was rejecting correct answers written in equivalent forms. Second, many benchmark items were defective. We found incorrect arithmetic in reference answers, questions that omitted information needed to choose among the answers, and physics problems whose results depended on unstated conventions. Perhaps most surprising, these issues were common even in expert-curated benchmarks, including those featured on Artificial Analysis such as the physics component of Humanity's Last Exam (HLE) and CritPt.[^1]
 
-So we decided to scale up. We worked with faculty members and their students at Yale, assigning every individual one or more questions in their field, and implemented a rigorous audit process. We audited the questions and repaired problems whenever a repair was possible. Thirty of 50 CMT-Benchmark questions had a defect, as did 21 of the 56 CritPt questions we audited. After correcting graders and repairing or excluding flawed questions, the measured results changed sharply:
+So we decided to scale up. We worked with faculty members and their students at Yale, assigning every individual one or more questions in their field, and implemented a rigorous audit process. We audited the questions and repaired problems whenever a repair was possible. 30 of 50 CMT-Benchmark questions had a defect, as did 21 of the 56 CritPt questions we audited. After correcting graders and repairing or excluding flawed questions, the measured results changed sharply:
 
 | Benchmark | Pre-audit mean@4 | Corrected mean@4 | Corrected pass@4 |
 | --- | ---: | ---: | ---: |
@@ -51,7 +51,7 @@ So we decided to scale up. We worked with faculty members and their students at 
 
 There are important qualifications. The corrected scores are computed on retained or repaired question sets, so the pre-audit and corrected values do not always use identical questions. For HLE, we audited only questions rejected for GPT-5.6-Sol. Some runs used tools while others did not. Even the best corrected evaluator we tested still had an error rate of about 4%. These details matter, but none changes the central result: the original scores substantially understated model performance.
 
-With apologies to my fellow physicists, AI is killing physics, at least the kind that fits in a problem set. Frontier models now solve nearly all well-posed, closed-ended physics problems in these benchmarks, from undergraduate mechanics to research-adjacent condensed matter theory. The leaderboards suggest otherwise because the leaderboards are broken.
+AI is killing physics, at least the kind that fits in a problem set. Frontier models now solve nearly all well-posed, closed-ended physics problems in these benchmarks, from undergraduate mechanics to research-adjacent condensed matter theory. The leaderboards suggest otherwise because the leaderboards are broken.
 
 ## Does this mean physics is dead?
 
@@ -61,7 +61,7 @@ No. But it tells us that physics is probably next after math on the "chopping bl
 
 Alongside the audit, we pointed GPT-based agentic systems we built at several open problems in theoretical physics. We have not been able to fully solve one. The agents made considerably less progress than comparable systems have made on open mathematics problems, though they produced interesting traces.
 
-These systems are excellent at portions of an open problem that resemble a problem set. Give them a concrete question, and they can set up and execute the calculation, run numerics, and check limits. What they do not do well yet is explore the right calculation at least over several turns that mimic the research workflow.[^2]
+These systems are excellent at portions of an open problem that resemble a problem set. Give them a concrete question, and they can set up and execute the calculation, run numerics, and check limits. What they do not do well yet is identify the right calculation at least over several turns that mimic the research workflow.[^2]
 
 ## What comes next
 
@@ -81,4 +81,4 @@ That part is still ours. For now.
 
 [^1]: We found some or all of these issues in several benchmarks presented in the paper, and also in our own PHYSICS benchmark, which was not included in the first version of the paper because we did not have time to audit it fully. It will be scrutinized in a future revision.
 
-[^2]: I personally tend to believe that in response to a single prompt, LLMs seem to be finding genuinely creative ideas.
+[^2]: I believe that in response to a single well-crafted prompt, LLMs find genuinely creative ideas.
