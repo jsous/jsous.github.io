@@ -14,23 +14,24 @@ permalink: /blogs/is-physics-dead/
 
 AI has already come for mathematics. What of physics?
 
-Anyone who has spent time working with frontier AI models knows that they are capable of astonishing feats of reason, but also of equally shocking mistakes and naïveté. Within the context a research project they still drift, make inconsistent choices, forget previously establish work, and often struggle to identify the next meaningful step despite know the mechanics.
+Anyone who has spent time working with frontier AI models knows that they are capable of astonishing feats of reason, but also of equally shocking mistakes and naïveté. Within the context a research project they still drift, make inconsistent choices, forget previously establish work, and often struggle to identify the next meaningful step despite know the mechanics. To spend a week applying an agent to a difficult problem is to experience both sides of this duality: the somewhat terrifying breadth of its knowledge, and its seemingly inability to put the knowledge to practical use.
 
-Frontier models can do astonishing things. They also drift. Over a long session they can lose focus, forget the main agenda, and struggle to identify the next useful step in a research project.
+In the wake of Navier-Stokes, any question of capability on the mathematics front seems settled. Physics, however, seems to offer some additional barriers that favor humans, such as fuzzier notations of proof and more interactions with the real world. Most concretely, the benchmarks would suggest that frontier AI has yet to approach even graduate level, so physics should be safe for a while.
 
-So how do they do in physics?
+Is it?
 
-## Physics is hard according to physics benchmarks
+## Looking at the benchmarks
 
-According to benchmark leaderboards, physics appears to be one of the last holdouts. On CritPt, a benchmark of research-level physics challenges, GPT-5.6-Sol scored 32%. On the physics portion of Humanity's Last Exam, it scored 47%. The apparent message is that frontier models only get roughly half of graduate-level physics wrong.
 
-It was tempting to believe that result. Most of the time, the hardest part of physics is not completing a calculation. It is deciding which calculation to do. So, in a way, physics is different from mathematics and is perhaps harder.
+Judging from the leaderboards on popular sites such as Artificial Analysis, physics appears to be one of the last holdouts against the inexorable march of AI capabilities. On CritPt, a benchmark of research-level challenges, GPT-5.6-Sol scored 32% (the latest release, GPT-6 Astra, does no better). On the physics portion of Humanity's Last Exam, it scored 47%. Apparently, even a model good enough to be declared artificial general intelligence gets roughly half of graduate-level physics wrong.
 
-There is an old joke about a physicist hired to help a dairy farm who begins with "assuming spherical cow." The joke captures the craft. Physicists are concerned mostly with finding the idealization that discards almost everything about a problem while preserving exactly what matters. For example, in 1983, Robert Laughlin set out to explain the fractional quantum Hall effect. The direct approach would have required an approach for a vast number of strongly interacting electrons, beyond any computer. Instead, Laughlin guessed a many-electron wavefunction with the right symmetry and limiting behavior. His guess was correct, and for it he received the Nobel Prize. Another great example is how Kenneth Wilson and Michael Fisher (who were also awarded the Nobel Prize) implemented a brilliant idea for studying phase transitions, where they treated a problem in three spatial dimensions through an expansion around four dimensions, solved it in 4 − ε dimensions, and then set ε = 1. These are not just calculations. They may omit a certain form of rigor, nonetheless they have the quality of being determined by an intuition about which calculation might expose the underlying physics.
+On the surface, this kind of result is plausible even if the latest models are strong enough to answer essentially any analytical question. Physics is not primarily about executing calculations. Mostly, the hardest part is to decide which calculations matter and which form of the question makes sense to tackle. 
 
-After all, perhaps the low leaderboard scores meant that physics remained beyond the reach of the best models.
+According to an old joke, if you hire a physicist to help a dairy farm, they will start by telling you to "assume spherical cow." The joke captures the deeper truth that physicists are concerned mostly with finding the idealization that discards almost everything about a problem while preserving exactly what matters. For example, in 1983, Robert Laughlin set out to explain the fractional quantum Hall effect. The direct approach would have required an approach for a vast number of strongly interacting electrons, beyond any computer. Instead, Laughlin guessed a many-electron wavefunction with the right symmetry and limiting behavior. His guess was correct, and for it he received the Nobel Prize. Another great example is how Kenneth Wilson and Michael Fisher (who were also awarded the Nobel Prize) implemented a brilliant idea for studying phase transitions, where they treated a problem in three spatial dimensions through an expansion around four dimensions, solved it in 4 − ε dimensions, and then set ε = 1. These are not just calculations. They may omit a certain form of rigor, nonetheless they have the quality of being determined by an intuition about which calculation might expose the underlying physics.
 
-## Our work
+After all, perhaps the low leaderboard scores meant that physics remained beyond the reach of the best models. Perhaps we are safe?
+
+## Measuring carefully
 
 We started by trying to understand where the models failed, to analyze the gaps in their reasoning. We collected rejected answers, then handed them to physicists (my amazing students) and asked them to check the grading. 
 
