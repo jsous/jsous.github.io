@@ -312,6 +312,52 @@ p {
   margin-bottom: 0;
 }
 
+.page-copy h2 {
+  margin: 2.5rem 0 0.75rem;
+  font-size: clamp(1.5rem, 3vw, 1.9rem);
+}
+
+.page-copy h3 {
+  margin: 1.75rem 0 0.5rem;
+  font-size: 1.25rem;
+}
+
+.page-copy h2 + h3 {
+  margin-top: 1rem;
+}
+
+.cv-download {
+  margin-bottom: 0.5rem;
+}
+
+.cv-list {
+  list-style: none;
+  margin: 0 0 1rem;
+  padding: 0;
+}
+
+.cv-list li {
+  display: grid;
+  grid-template-columns: 10rem minmax(0, 1fr);
+  gap: 0 1.25rem;
+  padding: 0.6rem 0;
+  border-top: 1px solid var(--border);
+}
+
+.cv-list li:first-child {
+  border-top: 0;
+  padding-top: 0;
+}
+
+.cv-date {
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.cv-body {
+  min-width: 0;
+}
+
 .people-section {
   margin-top: 2.5rem;
 }
@@ -349,6 +395,52 @@ p {
 .person-card p {
   margin-bottom: 0;
   color: var(--muted);
+}
+
+.people-intro {
+  margin-bottom: 1.1rem;
+  max-width: var(--measure);
+}
+
+.person-card h3 a {
+  color: inherit;
+  text-decoration-color: rgba(17, 75, 122, 0.45);
+}
+
+.person-card h3 a:hover {
+  color: var(--accent);
+}
+
+.people-join {
+  margin-top: 3rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+}
+
+.people-section--list {
+  max-width: var(--measure);
+}
+
+.people-section--list h3 {
+  margin: 1rem 0 0.5rem;
+  font-size: 1.15rem;
+}
+
+.people-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.people-list li {
+  padding: 0.45rem 0;
+  border-top: 1px solid var(--border);
+}
+
+.people-list li:first-child {
+  border-top: 0;
+  padding-top: 0;
 }
 
 .sr-only {
@@ -394,6 +486,11 @@ p {
 }
 
 @media (max-width: 40rem) {
+  .cv-list li {
+    grid-template-columns: 1fr;
+    gap: 0.15rem 0;
+  }
+
   .site-main {
     padding-top: 3rem;
   }

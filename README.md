@@ -60,6 +60,21 @@ http://127.0.0.1:4000/
 - Edit styles in `assets/css/style.scss`
 - Edit placeholder images in `assets/images/`
 
+## Group Members Page
+
+Group members are cards in `pages/people.md`. To add or update yourself:
+
+1. Put a headshot in `assets/images/` named `firstname-lastname.jpg`. Crop it to 4:3 (landscape) and resize to about 800 x 600 pixels; keep it under ~150 KB.
+2. In your card, replace the placeholder `src` with your file, e.g.
+   `{{ '/assets/images/firstname-lastname.jpg' | relative_url }}`,
+   and change the `alt` text to `Portrait of Your Name.`
+3. To link your name to a webpage, wrap it in a link inside the `<h3>`:
+   `<h3><a href="https://your-site.example">Your Name</a></h3>`
+4. Keep the one-line description in the same style as the others
+   (role, program, `YYYY–present`; co-advisor if any).
+
+Preview with `bundle exec jekyll serve`, then commit and push.
+
 ## GoatCounter
 
 - GoatCounter tracking is wired into `_layouts/default.html`

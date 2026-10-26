@@ -5,3 +5,6 @@ _site
 .sass-cache
 vendor
 
+
+# Files the Claude desktop app drops into the connected folder
+Claude outputs/

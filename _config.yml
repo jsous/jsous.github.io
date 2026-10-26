@@ -1,8 +1,8 @@
 title: John Sous
-description: Minimal starter website for the John Sous research lab at Yale University.
+description: "AI × Physics. Professor at Yale University studying interacting systems, from high-temperature superconductivity to scaling laws in AI."
 affiliation: Yale University
 lang: en
 baseurl: ""
-url: ""
+url: "https://jsous.github.io"
 permalink: pretty
 goatcounter_site: ""
