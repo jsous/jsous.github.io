@@ -26,9 +26,9 @@ permalink: /group-members/
   <p class="people-intro">I am fortunate to supervise several excellent Ph.D. students:</p>
   <div class="people-grid">
     <article class="person-card">
-      <img src="{{ '/assets/images/members/yagiz-devre.jpg' | relative_url }}" alt="Portrait of Yagiz Devre." width="460" height="460">
+      <img src="{{ '/assets/images/members/ydevre.png' | relative_url }}" alt="Portrait of Yagiz Devre." width="800" height="800">
       <h3>Yagiz Devre</h3>
-      <p>Ph.D. student in Computer Science, 2026–present.<br><a href="https://github.com/ygzdvr" rel="noreferrer">Homepage</a></p>
+      <p>Ph.D. student in Computer Science, 2026–present.<br><a href="https://scholar.google.com/citations?user=_uIW9QMAAAAJ&amp;hl=en" rel="noreferrer">Google Scholar</a>&nbsp;&nbsp;<a href="https://ygzdvr.github.io/" rel="noreferrer">Homepage</a></p>
     </article>
     <article class="person-card">
       <img src="{{ '/assets/images/members/mateo-cardenes-wuttig.jpg' | relative_url }}" alt="Portrait of Mateo Cárdenes Wuttig." width="5600" height="4000">
@@ -41,8 +41,8 @@ permalink: /group-members/
       <p>Ph.D. student in Applied Physics, 2025–present.<br><a href="https://scholar.google.com/citations?user=iW5bof4AAAAJ&amp;hl=en" rel="noreferrer">Google Scholar</a></p>
     </article>
     <article class="person-card">
-      <img class="person-card__image--andy" src="{{ '/assets/images/andy-liu.jpg' | relative_url }}" alt="Portrait of Andy Z. Liu." width="800" height="600">
-      <h3>Andy Z. Liu</h3>
+      <img class="person-card__image--andy" src="{{ '/assets/images/andy-liu.jpg' | relative_url }}" alt="Portrait of Andy Zeyi Liu." width="800" height="600">
+      <h3>Andy Zeyi Liu</h3>
       <p>Ph.D. student in Applied Physics, 2025–present.<br><a href="https://scholar.google.com/citations?user=8PekKQMAAAAJ&amp;hl=en" rel="noreferrer">Google Scholar</a></p>
     </article>
   </div>
