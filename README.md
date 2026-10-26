@@ -77,15 +77,9 @@ Preview with `bundle exec jekyll serve`, then commit and push.
 
 ## GoatCounter
 
-- GoatCounter tracking is wired into `_layouts/default.html`
-- The visible counter is shown only on `index.html`
-- To enable it, set `goatcounter_site` in `_config.yml`:
-
-```yml
-goatcounter_site: "YOURCODE.goatcounter.com"
-```
-
-- In GoatCounter settings, enable visitor counters if you want the visible homepage counter to appear
+- Visit tracking is set in `_config.yml` (`goatcounter_site: "jsous.goatcounter.com"`) and loaded in `_layouts/default.html`.
+- Stats are private, at https://jsous.goatcounter.com. There is no public visit counter on the site.
+- To turn tracking off, set `goatcounter_site: ""`.
 
 ## Useful Notes
 
