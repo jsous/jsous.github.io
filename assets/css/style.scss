@@ -393,6 +393,7 @@ a.pub-title:hover {
   gap: 1.5rem 3rem;
   align-items: center;
   margin-bottom: 1.5rem;
+  padding-bottom: 1.75rem;
 }
 
 .research-block .research-text > h2 {
@@ -409,7 +410,16 @@ a.pub-title:hover {
 }
 
 .research-figure {
+  position: relative;
   margin: 0;
+}
+
+/* The caption hangs below the image so only the image counts toward centering. */
+.research-figure figcaption {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
 }
 
 .research-figure img {
