@@ -391,8 +391,9 @@ a.pub-title:hover {
   display: grid;
   grid-template-columns: minmax(0, 1.15fr) minmax(16rem, 0.85fr);
   gap: 1.5rem 3rem;
-  align-items: start;
+  align-items: center;
   margin-bottom: 1.5rem;
+  padding-bottom: 1.75rem;
 }
 
 .research-block .research-text > h2 {
@@ -409,7 +410,16 @@ a.pub-title:hover {
 }
 
 .research-figure {
-  margin: 0.35rem 0 0;
+  position: relative;
+  margin: 0;
+}
+
+/* The caption hangs below the image so only the image counts toward centering. */
+.research-figure figcaption {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
 }
 
 .research-figure img {
@@ -515,6 +525,28 @@ a.pub-title:hover {
   padding-top: 1.25rem;
   border-top: 1px solid var(--border);
   color: var(--muted);
+}
+
+.home-news {
+  margin-top: 4rem;
+  max-width: var(--measure);
+}
+
+.home-news__header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.home-news__header h2 {
+  font-size: clamp(1.5rem, 3vw, 1.9rem);
+}
+
+.home-news__more {
+  font-size: 0.98rem;
+  white-space: nowrap;
 }
 
 .news-year {

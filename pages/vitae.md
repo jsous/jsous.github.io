@@ -56,15 +56,6 @@ permalink: /vitae/
   <li><span class="cv-date">2017–2018</span><div class="cv-body">ITAMP Visiting Fellowship, Harvard University</div></li>
 </ul>
 
-## Teaching
-
-Course instructor, Yale University.
-
-<ul class="cv-list">
-  <li><span class="cv-date">Fall 2024–2026</span><div class="cv-body"><strong>APHY/PHYS 439: Basic Quantum Mechanics</strong></div></li>
-  <li><span class="cv-date">Spring 2025–2026</span><div class="cv-body"><strong>APHY/PHYS 5750: Physics of AI</strong></div></li>
-</ul>
-
 ## Selected service
 
 <ul class="cv-list">
