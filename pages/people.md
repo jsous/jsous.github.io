@@ -9,14 +9,14 @@ permalink: /group-members/
   <p class="people-intro">I am excited to be working with several phenomenal postdocs:</p>
   <div class="people-grid">
     <article class="person-card">
-      <img src="{{ '/assets/images/member-placeholder-a.svg' | relative_url }}" alt="Portrait placeholder for Grace M. Sommers." width="800" height="600">
-      <h3>Grace M. Sommers</h3>
-      <p>Postdoctoral scholar, 2026–present. Joint with Aleksander Kubica.</p>
-    </article>
-    <article class="person-card">
       <img src="{{ '/assets/images/member-placeholder-b.svg' | relative_url }}" alt="Portrait placeholder for Gibbs Nwemadji." width="800" height="600">
       <h3>Gibbs Nwemadji</h3>
       <p>Postdoctoral scholar, starting January 2027. Visiting Ph.D. student in the group, March to July 2026.</p>
+    </article>
+    <article class="person-card">
+      <img src="{{ '/assets/images/member-placeholder-a.svg' | relative_url }}" alt="Portrait placeholder for Grace M. Sommers." width="800" height="600">
+      <h3>Grace M. Sommers</h3>
+      <p>Postdoctoral scholar, 2026–present. Joint with Aleksander Kubica.</p>
     </article>
   </div>
 </section>
