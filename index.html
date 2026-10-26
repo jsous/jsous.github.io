@@ -6,11 +6,29 @@ title: Home
   <div class="hero__content">
     <h1 id="home-title">John Sous</h1>
     <p class="hero__affiliation">Yale University</p>
-    <p class="hero__intro">I am a theoretical physicist and an Assistant Professor of Applied Physics and Physics at Yale University. My group uses the tools of physics, such as statistical mechanics and information theory, to study condensed matter, quantum science, and artificial intelligence. We aim for a unifying understanding of interacting statistical systems, and for mechanistic explanations in specific problems of broad interest: the origin of scaling laws in modern AI systems, for example, or the physical mechanisms that could produce high-temperature superconductivity in real materials.</p>
+    <p class="hero__intro">I am a theoretical physicist and an Assistant Professor of Applied Physics and Physics at Yale University. My group uses the tools of physics, such as statistical mechanics and information theory, to study condensed matter, quantum science, and artificial intelligence. We aim for a unifying understanding of interacting statistical systems, and for mechanistic explanations of specific phenomena of wide interest, from the emergence of scaling laws in modern AI systems to mechanisms for high-temperature superconductivity that can operate in real materials.</p>
     <div id="goatcounter-home-visits" class="hero__traffic" aria-live="polite"></div>
   </div>
 
   <aside class="profile-card" aria-label="Portrait of John Sous">
     <img src="{{ '/assets/images/john-sous.jpg' | relative_url }}" alt="Portrait of John Sous." width="1200" height="900">
   </aside>
+</section>
+
+<section class="home-news" aria-labelledby="home-news-title">
+  <div class="home-news__header">
+    <h2 id="home-news-title">News</h2>
+    <a class="home-news__more" href="{{ '/news/' | relative_url }}">All news</a>
+  </div>
+  {% assign items = site.data.news | sort: "date" | reverse %}
+  <ul class="news-list">
+  {% for item in items limit: 5 %}
+    {% unless item.show == false %}
+    <li class="news-item">
+      <span class="news-date">{{ item.date | date: "%B %Y" }}</span>
+      <div class="news-body">{{ item.text | markdownify }}</div>
+    </li>
+    {% endunless %}
+  {% endfor %}
+  </ul>
 </section>
