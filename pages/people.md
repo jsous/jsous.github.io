@@ -41,7 +41,7 @@ permalink: /group-members/
       <p>Ph.D. student in Applied Physics, 2025–present.<br><a href="https://scholar.google.com/citations?user=iW5bof4AAAAJ&amp;hl=en" rel="noreferrer">Google Scholar</a></p>
     </article>
     <article class="person-card">
-      <img src="{{ '/assets/images/andy-liu.jpg' | relative_url }}" alt="Portrait of Andy Z. Liu." width="800" height="600">
+      <img class="person-card__image--andy" src="{{ '/assets/images/andy-liu.jpg' | relative_url }}" alt="Portrait of Andy Z. Liu." width="800" height="600">
       <h3>Andy Z. Liu</h3>
       <p>Ph.D. student in Applied Physics, 2025–present.<br><a href="https://scholar.google.com/citations?user=8PekKQMAAAAJ&amp;hl=en" rel="noreferrer">Google Scholar</a></p>
     </article>
