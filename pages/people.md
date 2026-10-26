@@ -31,12 +31,12 @@ permalink: /group-members/
       <p>Ph.D. student in Computer Science, 2026–present.</p>
     </article>
     <article class="person-card">
-      <img src="{{ '/assets/images/member-placeholder-b.svg' | relative_url }}" alt="Portrait placeholder for Mateo C. Wuttig." width="800" height="600">
-      <h3>Mateo C. Wuttig</h3>
-      <p>Ph.D. student in Applied Physics, 2025–present. Co-advised with Joseph Tindall (Flatiron Institute).</p>
+      <img src="{{ '/assets/images/members/mateo-cardenes-wuttig.jpg' | relative_url }}" alt="Portrait of Mateo Cárdenes Wuttig." width="5600" height="4000">
+      <h3>Mateo Cárdenes Wuttig</h3>
+      <p>Ph.D. student in Applied Physics, 2025–present. Co-advised with Joseph Tindall (Flatiron Institute).<br><a href="https://scholar.google.com/citations?user=gTaxN_EAAAAJ" rel="noreferrer">Google Scholar</a></p>
     </article>
     <article class="person-card">
-      <img src="{{ '/assets/images/members/hsun.jpg' | relative_url }}" alt="Portrait of Haoran Sun." width="1522" height="1522">
+      <img src="{{ '/assets/images/members/hsun.jpeg' | relative_url }}" alt="Portrait of Haoran Sun." width="1667" height="1667">
       <h3>Haoran Sun</h3>
       <p>Ph.D. student in Applied Physics, 2025–present.<br><a href="https://scholar.google.com/citations?user=iW5bof4AAAAJ&amp;hl=en" rel="noreferrer">Google Scholar</a></p>
     </article>
