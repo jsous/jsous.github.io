@@ -9,9 +9,9 @@ permalink: /group-members/
   <p class="people-intro">I am excited to be working with several phenomenal postdocs:</p>
   <div class="people-grid">
     <article class="person-card">
-      <img src="{{ '/assets/images/member-placeholder-b.svg' | relative_url }}" alt="Portrait placeholder for Gibbs Nwemadji." width="800" height="600">
+      <img src="{{ '/assets/images/members/gibbs-nwemadji.jpg' | relative_url }}" alt="Portrait of Gibbs Nwemadji." width="1254" height="1254">
       <h3>Gibbs Nwemadji</h3>
-      <p>Postdoctoral scholar, starting January 2027. Visiting Ph.D. student in the group, March to July 2026.</p>
+      <p>Postdoctoral scholar, starting January 2027. Visiting Ph.D. student in the group, March to July 2026.<br><a href="https://gibbsnwemadji.github.io/" rel="noreferrer">Homepage</a></p>
     </article>
     <article class="person-card">
       <img src="{{ '/assets/images/members/gsommer.png' | relative_url }}" alt="Portrait of Grace M. Sommers." width="486" height="442">
@@ -26,9 +26,9 @@ permalink: /group-members/
   <p class="people-intro">I am fortunate to supervise several excellent Ph.D. students:</p>
   <div class="people-grid">
     <article class="person-card">
-      <img src="{{ '/assets/images/member-placeholder-d.svg' | relative_url }}" alt="Portrait placeholder for Yagiz Devre." width="800" height="600">
-      <h3><a href="https://github.com/ygzdvr">Yagiz Devre</a></h3>
-      <p>Ph.D. student in Computer Science, 2026–present.</p>
+      <img src="{{ '/assets/images/members/yagiz-devre.jpg' | relative_url }}" alt="Portrait of Yagiz Devre." width="460" height="460">
+      <h3>Yagiz Devre</h3>
+      <p>Ph.D. student in Computer Science, 2026–present.<br><a href="https://github.com/ygzdvr" rel="noreferrer">Homepage</a></p>
     </article>
     <article class="person-card">
       <img src="{{ '/assets/images/members/mateo-cardenes-wuttig.jpg' | relative_url }}" alt="Portrait of Mateo Cárdenes Wuttig." width="5600" height="4000">
