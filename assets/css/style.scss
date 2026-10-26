@@ -479,6 +479,15 @@ p {
   margin-bottom: 0.3rem;
 }
 
+.person-card p.person-card__role {
+  margin-bottom: 0;
+}
+
+.person-card__role,
+.person-card__links {
+  line-height: 1.35;
+}
+
 .person-card__role {
   color: var(--muted);
 }
