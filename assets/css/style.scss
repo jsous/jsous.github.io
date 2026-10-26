@@ -484,12 +484,16 @@ a.pub-title:hover {
 
 .person-card img {
   width: 100%;
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 1 / 1;
   object-fit: cover;
   margin-bottom: 0.9rem;
   border: 1px solid var(--border);
   border-radius: 14px;
   background: linear-gradient(180deg, #edf4f7 0%, #e3ebf0 100%);
+}
+
+.person-card img.person-card__image--andy {
+  object-position: 77% center;
 }
 
 .person-card h3 {

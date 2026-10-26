@@ -14,9 +14,9 @@ permalink: /group-members/
       <p>Postdoctoral scholar, starting January 2027. Visiting Ph.D. student in the group, March to July 2026.</p>
     </article>
     <article class="person-card">
-      <img src="{{ '/assets/images/member-placeholder-a.svg' | relative_url }}" alt="Portrait placeholder for Grace M. Sommers." width="800" height="600">
+      <img src="{{ '/assets/images/members/gsommer.png' | relative_url }}" alt="Portrait of Grace M. Sommers." width="486" height="442">
       <h3>Grace M. Sommers</h3>
-      <p>Postdoctoral scholar, 2026–present. Joint with Aleksander Kubica.</p>
+      <p>Postdoctoral scholar, 2026–present. Joint with Aleksander Kubica.<br><a href="https://scholar.google.com/citations?user=ChUE7jwAAAAJ&amp;hl=en" rel="noreferrer">Google Scholar</a></p>
     </article>
   </div>
 </section>
@@ -36,14 +36,14 @@ permalink: /group-members/
       <p>Ph.D. student in Applied Physics, 2025–present. Co-advised with Joseph Tindall (Flatiron Institute).</p>
     </article>
     <article class="person-card">
-      <img src="{{ '/assets/images/member-placeholder-a.svg' | relative_url }}" alt="Portrait placeholder for Haoran Sun." width="800" height="600">
+      <img src="{{ '/assets/images/members/hsun.jpg' | relative_url }}" alt="Portrait of Haoran Sun." width="1522" height="1522">
       <h3>Haoran Sun</h3>
-      <p>Ph.D. student in Applied Physics, 2025–present.</p>
+      <p>Ph.D. student in Applied Physics, 2025–present.<br><a href="https://scholar.google.com/citations?user=iW5bof4AAAAJ&amp;hl=en" rel="noreferrer">Google Scholar</a></p>
     </article>
     <article class="person-card">
-      <img src="{{ '/assets/images/andy-liu.jpg' | relative_url }}" alt="Portrait of Andy Z. Liu." width="800" height="600">
+      <img class="person-card__image--andy" src="{{ '/assets/images/andy-liu.jpg' | relative_url }}" alt="Portrait of Andy Z. Liu." width="800" height="600">
       <h3>Andy Z. Liu</h3>
-      <p>Ph.D. student in Applied Physics, 2025–present.</p>
+      <p>Ph.D. student in Applied Physics, 2025–present.<br><a href="https://scholar.google.com/citations?user=8PekKQMAAAAJ&amp;hl=en" rel="noreferrer">Google Scholar</a></p>
     </article>
   </div>
 </section>
