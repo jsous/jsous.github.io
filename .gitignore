@@ -4,4 +4,7 @@ _site
 .jekyll-metadata
 .sass-cache
 vendor
-drafts/
+
+
+# Files the Claude desktop app drops into the connected folder
+Claude outputs/

@@ -1,115 +1,85 @@
 ---
 layout: post
 title: "Is Physics Dead?"
-subtitle: "Expert re-grading, broken benchmarks, and what frontier models can and cannot do in physics"
+subtitle: "Broken benchmarks, and re-evaluating the capabilities of frontier models in physics"
 author: "John Sous"
-date: 2026-09-11 12:00:00 -0400
-description: "What an expert audit of physics benchmarks reveals about frontier models, evaluation, and the parts of physics that remain difficult."
+date: 2026-09-14 12:00:00 -0400
+description: "An expert audit of physics benchmarks."
+permalink: /blogs/is-physics-dead/
 ---
+*Based on [How Good Are Frontier Models at Physics? Expert Re-Grading Reveals Broken Evaluations and Near-Saturation of Leading Benchmarks](https://arxiv.org/abs/2609.13009), arXiv:2609.13009. Thanks to my co-authors Ali Ansari, Haoran Sun, Andy Zeyi Liu, Mark Jabbour, Lucas Baker, and Arman Cohan, and to the Yale physics faculty and graduate researchers who carried out the audits.*
 
-> *Physics is dead. Physics remains dead. And we have killed it.*
->
-> Nietzsche, more or less
+> *Physics is dead.*
+> (not Friedrich Nietzsche)
 
-Anyone who works with frontier models knows two things at once. They can do astonishing things, and they drift. Over a long session they can lose the thread, forget what they have established, and struggle to identify the next useful step in a research project. Both things are true, and anyone who has spent a week with an agent on a hard problem has felt both.
+AI has already come for mathematics. What of physics?
 
-So what about physics?
+Anyone who has spent time working with frontier AI models knows that they are capable of astonishing feats of reason, but also of equally shocking mistakes and naïveté. Within the context of a research project they still drift, make inconsistent choices, forget previously established work, and often struggle to identify the next meaningful step despite knowing the mechanics. To spend a week applying an agent to a difficult problem is to experience both sides of this duality: the somewhat terrifying breadth of its knowledge, and its seeming inability to put the knowledge to practical use.
 
-## The benchmarks said we were safe
+In the wake of Navier-Stokes, any question of capability on the mathematics front seems settled. Physics, however, seems to offer some additional barriers that favor humans, such as fuzzier notions of proof and more interactions with the real world. Most concretely, the benchmarks would suggest that frontier AI has yet to approach even graduate level, so physics should be safe for a while.
 
-If you looked at the leaderboards, physics appeared to be one of the last holdouts. On CritPt, a benchmark of research-level physics challenges, GPT-5.6-Sol scored 32%. On the physics portion of Humanity's Last Exam, it scored 47%. The apparent message was that frontier models still got roughly half of graduate-level physics wrong.
+Is it?
 
-It was tempting to believe that result. Most of the time, the hardest part of physics is not completing a calculation. It is deciding which calculation to do.
+## Looking at the benchmarks
 
-There is an old joke about a physicist hired to help a dairy farm who begins with "assume a spherical cow." The joke is on us, but it also captures the craft: physics is the art of finding the idealization that discards almost everything about a problem while preserving exactly what matters.
 
-In 1983, Robert Laughlin wanted to explain the fractional quantum Hall effect. The direct approach would have required solving the Schrödinger equation for a vast number of strongly interacting electrons. Instead, Laughlin guessed a many-electron wavefunction with the right symmetry and limiting behavior. The guess was the discovery.
+Judging from the leaderboards on popular sites such as Artificial Analysis, physics appears to be one of the last holdouts against the inexorable march of AI capabilities. On CritPt, a benchmark of research-level challenges, GPT-5.6 Sol scored 32% (the latest release, GPT-6 Astra, does no better). On the physics portion of Humanity's Last Exam, it scored 47%. Apparently, even a model good enough to be declared artificial general intelligence gets roughly half of graduate-level physics wrong.
 
-Kenneth Wilson and Michael Fisher made a similarly audacious move when studying phase transitions. They treated a problem in three spatial dimensions through an expansion around four dimensions, solved it in 4 − ε dimensions, and then set ε = 1. These are not merely calculations. They are decisions about which calculation might expose the underlying physics.
+On the surface, this kind of result is plausible even if the latest models are strong enough to answer essentially any analytical question. Physics is not primarily about executing calculations. Mostly, the hardest part is to decide which calculations matter and which form of the question makes sense to tackle. 
 
-A benchmark problem usually makes that decision in advance. Perhaps the low leaderboard scores meant that even then, physics remained beyond the models.
+According to an old joke, if you hire a physicist to help a dairy farm, they will start by telling you to "assume a spherical cow." The joke captures the deeper truth that physicists are concerned mostly with finding the idealization that discards almost everything about a problem while preserving exactly what matters. For example, in 1983, Robert Laughlin set out to explain the fractional quantum Hall effect. The direct approach would have required an approach for a vast number of strongly interacting electrons, beyond any computer. Instead, Laughlin guessed a many-electron wavefunction with the right symmetry and limiting behavior. His guess was correct, and for it he received the Nobel Prize. Another great example is how Kenneth Wilson (who was also awarded the Nobel Prize) and Michael Fisher implemented a brilliant idea for studying phase transitions, where they treated a problem in three spatial dimensions through an expansion around four dimensions, solved it in 4 − ε dimensions, and then set ε = 1. These are not just calculations. They may omit a certain form of rigor, nonetheless they have the quality of being determined by an intuition about which calculation might expose the underlying physics.
 
-## What actually happened
+After all, perhaps the low leaderboard scores meant that physics remained beyond the reach of the best models. Perhaps we are safe?
 
-We started by trying to understand where the models failed. We collected rejected answers, then handed them to physicists and asked them to check the grading. Faculty and graduate students, mostly at Yale, reviewed problems in their own subfields.
+## Measuring carefully
 
-The physicists came back annoyed, and not at the models.
+In an effort to explain the gap between frontier model performance on physics and mathematics benchmarks, we looked at why the models failed. Unlike most benchmark analyses, which seek to understand gaps in AI ability at scale and parse differences in statistics, we decided it was necessary to interrogate the questions in detail. We collected questions where the AI answers had largely been rejected, handed them to highly qualified physicists (my amazing students!), and asked them to check the grading.
 
-First, the evaluation pipeline was rejecting correct answers written in equivalent forms. In one PHYBench problem about the tension in a rope tied around three balls with a fourth ball on top, the model answered P/(3√6). The reference gave (√6/18)P. These expressions are identical, but the rule-based grader assigned a zero. On PHYBench and PRISM-Physics, grader mistakes were the largest source of rejections.
+To put it lightly, we were surprised.
 
-Second, many benchmark items were defective. We found incorrect arithmetic in reference answers, questions that omitted information needed to choose among the answers, and physics problems whose results depended on unstated conventions. A Kitaev honeycomb model question, for example, did not specify whether the couplings multiply Pauli matrices or spin-1/2 operators, changing the ground-state energy by a factor of four.
+<figure>
+  <img src="/assets/benchmark_accuracy.png" alt="Pre-audit and corrected accuracy on six physics benchmarks" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
+  <figcaption style="font-size: 0.9em; color: #666; text-align: center;">Light bars are pre-audit scores, solid bars are scores after correction.</figcaption>
+</figure>
 
-Of 250 rejected answers audited across HLE-Physics, PHYBench, PRISM-Physics, and UGPhysics, 238 turned out to be benchmark or grader failures. Only 12 were model failures. On PRISM-Physics there were none; on UGPhysics there was one.
+Across all benchmarks, we found that a large majority of questions where frontier model answers were rejected were false negatives, either because the evaluation pipeline rejected equivalent forms of correct answers or because the benchmark items themselves were defective. We found incorrect arithmetic in reference answers, omissions of key information leading to underspecified problem statements, and problems whose results depended on unstated conventions. Most surprisingly, these issues were also prevalent in the expert-curated benchmarks used to evaluate frontier physics capabilities, including CritPt and the physics component of Humanity's Last Exam. [^1]
 
-For the two hardest expert-authored benchmarks, we audited every question and repaired problems whenever a defensible repair existed. Thirty of 50 CMT-Benchmark questions had a defect, as did 21 of the 56 CritPt questions we audited. After correcting graders and repairing or excluding flawed questions, the measured results changed sharply:
+We worked with faculty members and their students at Yale (and a few external physicists) to scale the audit process, assigning every individual question in their area of expertise and attempting repairs wherever possible. We found defects in 30 of 50 CMT-Benchmark questions and 21 of 56 CritPt questions. After correcting graders and repairing or excluding flawed questions, we found that not only were the results enormously different pre- and post-audit, but the strongest models available at the time of audit approached saturation on even the hardest benchmarks. 
 
 | Benchmark | Pre-audit mean@4 | Corrected mean@4 | Corrected pass@4 |
 | --- | ---: | ---: | ---: |
-| PHYBench | 26.5% | 90.2% | 95.4% |
-| PRISM-Physics | 13.0% | 94.6% | 96.0% |
-| UGPhysics | 83.0% | 92.1% | 93.9% |
 | HLE-Physics | 47.3% | 78.7% | 91.4% |
 | CMT-Benchmark | 61.0% | 87.2% | 98.0% |
 | CritPt | 32.3%* | 87.5% | 94.4% |
 
-*The pre-audit CritPt figure is Artificial Analysis's reported mean@5 on 70 challenges. The corrected results use the 54 retained challenges.*
+*The pre-audit CritPt figure is reported mean@5 on all 70 challenges according to Artificial Analysis. Our corrected results use the 54 retained challenges.*
 
-Claude Fable 5 and Gemini 3.1 Pro moved in the same direction on all six benchmarks.
+There are important qualifications: corrected scores are computed on retained or repaired questions, some runs used tools while others did not, and our HLE audit only covered questions where GPT-5.6 Sol’s answers had been initially rejected. In addition, even the corrected evaluator had an error rate of about 4%. However, none of these factors affect the central conclusion that all physics benchmarks have been dramatically understating frontier AI capabilities in physics and continue to do so.
 
-There are important qualifications. The corrected scores are computed on retained or repaired question sets, so the pre-audit and corrected values do not always use identical questions. For four benchmarks, we audited only questions rejected for GPT-5.6-Sol. Some runs used tools while others did not, and three benchmarks draw from publicly available problems that could appear in training data. Even the best corrected evaluator we tested still had an error rate of about 4%. These details matter, but none changes the central result: the original scores substantially understated model performance.
+To restate: even the prior generation of frontier models (Fable 5 and GPT-5.6 Sol) now solve nearly all well-posed, closed-form physics problems in every available benchmark, from undergraduate mechanics to research-level condensed matter theory. The belief that benchmarks imply some key difference between physics and mathematics, programming, and other areas where AI capabilities now approach superhuman levels is no more than a comforting fiction.
 
-With apologies to my fellow physicists, AI is killing physics, at least the kind that fits in a problem set. Given several attempts, frontier models now solve nearly all well-posed, closed-ended physics problems in these benchmarks, from undergraduate mechanics to research-adjacent condensed matter theory. The leaderboards suggest otherwise because the leaderboards are broken.
+None of this implies that physics is dead, that agents will replace human physicists, or even that everything important about physics can be reduced to a form that is cleanly solvable by AI. However, it strongly suggests a rude surprise awaits anyone who believes the progression that has so far advanced through chess, Go, poker, protein folding, programming, and now mathematics is about to stop at physics.
 
-## Does this mean physics is dead?
+## Physics is not yet solved
 
-No. But something did die, and it is worth being precise about what.
+Given the evidence that physics and mathematics are trending strongly in the same direction, we were also curious whether they would make similar progress on open questions. Our results in this area, although not reported in the paper, look a bit more optimistic for the physicists.
 
-Every benchmark has a defect rate: wrong references, ambiguous questions, and graders that fail to recognize equivalent answers. That rate creates a floor beneath the measured error. When models were weak, the floor barely mattered. A model with a 60% true error rate will not reveal a 10% benchmark defect rate.
+We tested a GPT-based agentic system, which previously succeeded in resolving several open mathematical conjectures, on open problems in theoretical physics. To our temporary relief and encouragement, it has not managed to fully resolve even one autonomously. We also noted that these agents made considerably less progress on the partially resolved physics problems than on open mathematics problems of comparable difficulty, both by our analysis and independent agent-based analysis of partial results in each domain.
 
-The true error rate of frontier models has now fallen below the defect rate of essentially every physics benchmark we examined. Once that happens, most errors on the scorecard belong to the benchmark rather than the model. The scorecard stops measuring the model and begins measuring the benchmark's sloppiness.
+Our preliminary conclusion is that the difference comes down exactly to the gaps in high-level intuition that one notices working with these systems in person, and that these gaps may prove more of an obstacle to physics research than to mathematics because problem formulation is a more critical component of what makes a physics question “open”. In other words, frontier models are demonstrably excellent at the portions of any research problem that resemble a problem set. Calculations, numerics, limit-checking, and efficient program formulation are no problem: what they lack is the meta-awareness to step back and ask not only what can be solved but what should be. So far, the traces demonstrate ample evidence of understanding the problem as posed, but not the fundamental will to reshape the question that made approaches such as Laughlin’s, Wilson’s, and Fisher’s possible. 
 
-Grader errors follow the same logic. A faulty grader mostly harms correct answers. A weak model produces few correct answers, so the defect is masked. A strong model produces many, and the grader's errors accumulate. Bad evaluation is hidden by weak models and exposed by strong ones.
+## Redefining frontier physics for AI
 
-This is not unique to physics. It is what happens when the thing being measured outgrows the ruler. Physics benchmarks are especially vulnerable because they are commonly graded against human-written reference solutions without the executable checks available in software benchmarks.
+Given that all existing benchmarks are approaching saturation, what do we need in order to get a true picture of AI capabilities in physics research?
 
-What died is the idea that closed-ended physics problems can tell us much about frontier capabilities. If a benchmark is made of questions that look like homework, it may already be saturated.
+**Harder tasks.** The next generation of benchmarks should focus on tasks that emphasize the unique difficulties of physics, favoring those where choosing a favorable representation is part of the problem and there may not be a single reference answer. This will also require a more careful effort to create standards of evaluation flexible enough to admit any answer a qualified physicist would deem correct without relying purely on agentic self-judgment.
 
-## Solving problems is not doing physics
+**Better agents and harnesses for physics.** AI physics currently lacks the infrastructure of AI mathematics. Besides the simple fact that far more effort has been devoted to the latter, the prominence of Lean has contributed critically to the progression of AI mathematical capabilities. So far, physics has no clear parallel. We need verification tools built around our own culture: limiting cases, dimensional analysis, agreement with known results, and simply better ways of asking the questions that used to exist only on a blackboard. Before tackling the most famous grand challenges, we can develop these tools to address open problems with a more well-defined space of plausible idealizations.
 
-Alongside the audit, we pointed GPT-based agentic systems at several open problems in theoretical physics. We have not fully solved one. The agents made considerably less progress than comparable systems have made on open mathematics problems.
+**Open challenges.** We must establish a process of cooperation between humans and AI on open physics questions, including publicly documenting attempts, analyzing partial progress and instructive failures, and creating models for interpretable AI-driven physics research that contributes to human knowledge. Mathematics, as stated by Toffoli and Duede, is not merely the production of solutions, and nor is physics. Results should be comprehensible to humans, and we should have a definite idea of what positive collaboration looks like.
 
-The pattern is more interesting than the headline. These systems are excellent at portions of an open problem that resemble a problem set. Give them a Hamiltonian and a concrete question, and they can set up the calculation, perform perturbation theory, run numerics, and check limits. What they do poorly is choose the calculation.
+It is always tempting to stick our heads in the sand. What makes this moment unique for physicists is that it is equally easy to do so in several ways: naïve faith in the benchmark gaps, an emphasis on the intuition and judgment supposedly unique to humans, or a refusal to furnish the tools that have helped power the recent progress of AI in mathematics. We propose that the braver and more tenable choice is to face facts directly and help steer the evolution of cooperation between humans and AI. What would it look like to have a process where both sides contribute, results are pursued not for bragging rights or benchmarks but for the evolution of knowledge, and accessibility to human minds remains a core tenet and design component of the research process?
 
-When a standard approach fails, as it often must on a genuinely open problem, agents tend to try a neighboring standard approach and then another. Over a long session, the work spreads into many individually reasonable partial calculations that do not add up to an attack on the actual question. The mistakes are often not algebraic. They lie in the setup, in deciding what to retain and what to discard.
+That part is still up to us. 
 
-They are, in other words, in the spherical cow.
-
-That is the skill represented by Laughlin's guess and Wilson and Fisher's imaginary dimensions. A closed-ended benchmark has already selected an idealization. On an open problem, nobody has made that choice yet.
-
-This observation is preliminary. It comes from a handful of problems and harnesses, and mathematical successes have also required long runs with humans in the loop. Still, the contrast points toward a verifier problem. A proof can be checked line by line. A physical idea is ultimately checked by how well it explains the world, and the world does not return a boolean.
-
-## Same question, four answers
-
-The gap between mean@4 and pass@4 deserves attention. On HLE-Physics, GPT-5.6-Sol answered 79% correctly on average across four attempts but solved 91% at least once. On CMT-Benchmark, the figures were 87% and 98%. What should we make of a system that gives different answers to the same question?
-
-One response is practical. A model sampled at nonzero temperature is a distribution over solutions, not a calculator. In this view, pass@k measures capability while mean@k measures reliability. Verification, independent attempts, self-consistency, and better agent scaffolding can narrow the gap.
-
-The less comfortable response is that wrong attempts do not reliably come with lower confidence. Some errors are slips: one attempt drops a factor and another does not. More samples can help. Others are systematic. On one CritPt challenge involving two optically trapped nanoparticles, every attempt assumed the polarizabilities were real even though the problem did not say so. Resampling did not fix the mistaken model of the problem.
-
-The distinction matters. Slips are a reliability problem; systematic misreadings are a physics problem. A responsible evaluation should report both average success and best-of-several capability, then investigate which errors produce the difference.
-
-## What comes next
-
-**Harder tasks, defined by the community.** The next generation of evaluations should include tasks that are hard in the way physics is hard, where choosing the idealization is part of the problem and there may be no single reference answer. Building them will require expert curation, clear conventions, and serious verification.
-
-**Open challenges.** To learn whether models can do physics rather than physics homework, we should give them open problems and document the attempts publicly, with physicists in the loop. Partial progress and instructive failure should both count as useful outcomes.
-
-**Better agents and harnesses for physics.** Physics needs verification tools built around its own habits: limiting cases, dimensional analysis, agreement with known results, numerical sanity checks, and the questions a good advisor asks at a whiteboard. The best first targets may not be famous grand challenges, but problems that are real while keeping the space of plausible idealizations small.
-
-## What died, and what did not
-
-Physicists have said for some time that leaderboard scores do not match what they see when using frontier models. The audit puts numbers behind that intuition. What died is a way of measuring physics ability, along with the comfortable belief that these systems still struggle broadly with problem sets.
-
-What remains alive is the difficult part: which idealization, which calculation, which spherical cow.
-
-That part is still ours. For now.
+[^1]: We found some or all of these issues in several benchmarks presented in the paper, and also in our own PHYSICS benchmark, which was not included in the first version of the paper because we did not have time to audit it fully. It will be scrutinized in a future revision.
