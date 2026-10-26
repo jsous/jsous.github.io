@@ -1,8 +1,18 @@
 title: John Sous
-description: "AI × Physics. Professor at Yale University studying interacting systems, from high-temperature superconductivity to scaling laws in AI."
+description: "AI × Physics. Professor at Yale University studying interacting systems, natural and artificial."
 affiliation: Yale University
 lang: en
 baseurl: ""
 url: "https://jsous.github.io"
 permalink: pretty
 goatcounter_site: ""
+
+exclude:
+  - .bundle
+  - .jekyll-cache
+  - .sass-cache
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - drafts
+  - vendor

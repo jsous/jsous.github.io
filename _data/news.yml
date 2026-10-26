@@ -1,0 +1,67 @@
+# News items for /news/. Add new items anywhere in this file; the page sorts
+# them by `date`, newest first, so the order here does not matter.
+#
+# Each item:
+#   date:   YYYY-MM-DD  (used for sorting; the page shows only month and year)
+#   text:   the item, Markdown allowed (links, *italics*, **bold**)
+#   tweet:  optional, URL of one post on X to embed under the item
+#   tweets: optional, a list of posts to embed; each is a URL, or `url:` plus an
+#           optional `label:` shown above the embed (e.g. "Talk at Cohere")
+#   show:   optional, set to false to hide an item without deleting it
+
+- date: 2026-10-20
+  text: >-
+    Interview in *New Scientist*:
+    [Will physics be the next field to get turned upside down by AI?](https://www.newscientist.com/article/2593273-will-physics-be-the-next-field-to-get-turned-upside-down-by-ai/)
+
+- date: 2026-09-25
+  text: Four papers accepted at NeurIPS 2026.
+
+- date: 2026-09-14
+  text: >-
+    New paper: [How good are frontier models at physics?](https://arxiv.org/abs/2609.13009)
+    Expert re-grading shows that leading physics benchmarks are broken, and that, contrary to what
+    their published scores suggest, frontier models are close to saturating them.
+  tweet: https://x.com/ZeyiAndyLiu/status/2099559337299443956
+
+- date: 2026-09-10
+  text: >-
+    New paper on world models that learn physics:
+    [Semigroup-JEPA: Latent dynamics consistency for zero-shot physics generalization](https://arxiv.org/abs/2609.10464).
+  tweets:
+    - url: https://x.com/ZeyiAndyLiu/status/2098122488920080520
+    - url: https://x.com/ZeyiAndyLiu/status/2109056705095143887
+      label: Talk at Cohere by Andy Liu
+
+- date: 2026-07-10
+  text: >-
+    We organized [AI4Physics](https://icml.cc/virtual/2026/workshop/54069), the first ICML workshop
+    on AI for physics, at ICML 2026 in Seoul.
+
+- date: 2026-05-16
+  text: >-
+    New paper, a spectral lens on optimization:
+    [Understanding optimization from activation and gradient spectra: A modded-NanoGPT study](https://arxiv.org/abs/2605.05683).
+  tweet: https://x.com/ZeyiAndyLiu/status/2055642947203239989
+
+- date: 2025-09-15
+  text: >-
+    Co-organized the [AI + Physics Workshop](https://www.gc.cuny.edu/events/ai-physics-workshop)
+    at the CUNY Graduate Center.
+
+- date: 2025-06-23
+  text: >-
+    Awarded the [2025 Nevill Mott Medal and Prize](https://engineering.yale.edu/news-and-events/news/sous-awarded-nevill-mott-prize-institute-physics)
+    by the International Conference on Strongly Correlated Electron Systems (SCES 2025).
+
+- date: 2025-04-29
+  text: >-
+    Massimo Capone wrote a commentary on our bipolaronic high-temperature superconductivity paper
+    for the [Journal Club for Condensed Matter Physics](https://www.condmatjclub.org/jccm_april_2025_01/):
+    *How can bipolarons manage to stay slim?*
+
+- date: 2025-04-15
+  text: >-
+    Gave the Yale Physics Club colloquium on the
+    [2024 Nobel Prize in Physics](https://physics.yale.edu/news/nobel-prize-physics-2024-lecture):
+    *The rise of neural learning*.
