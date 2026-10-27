@@ -28,7 +28,7 @@ permalink: /group-members/
     <article class="person-card">
       <img src="{{ '/assets/images/members/ydevre.png' | relative_url }}" alt="Portrait of Yagiz Devre." width="800" height="800">
       <h3>Yagiz Devre</h3>
-      <p>Ph.D. student in Computer Science, 2026–present.<br><a href="https://scholar.google.com/citations?user=_uIW9QMAAAAJ&amp;hl=en" rel="noreferrer">Google Scholar</a>&nbsp;&nbsp;<a href="https://ygzdvr.github.io/" rel="noreferrer">Homepage</a></p>
+      <p>Ph.D. student in Computer Science, 2026–present.<br><a href="https://ygzdvr.github.io/" rel="noreferrer">Homepage</a></p>
     </article>
     <article class="person-card">
       <img src="{{ '/assets/images/members/mateo-cardenes-wuttig.jpg' | relative_url }}" alt="Portrait of Mateo Cárdenes Wuttig." width="5600" height="4000">
