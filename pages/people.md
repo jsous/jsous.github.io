@@ -6,15 +6,15 @@ permalink: /group-members/
 
 <section class="people-section">
   <h2>Postdoctoral Scholars</h2>
-  <p class="people-intro">I am excited to be working with several phenomenal postdocs:</p>
+  <p class="people-intro">I am excited to be working with two phenomenal postdocs:</p>
   <div class="people-grid">
     <article class="person-card">
-      <img src="{{ '/assets/images/members/gibbs-nwemadji.jpg' | relative_url }}" alt="Portrait of Gibbs Nwemadji." width="1254" height="1254">
+      <img src="{{ '/assets/images/members/gibbs-nwemadji.jpg' | relative_url }}" alt="Portrait of Gibbs Nwemadji." width="800" height="800">
       <h3>Gibbs Nwemadji</h3>
       <p>Postdoctoral scholar, starting January 2027. Visiting Ph.D. student in the group, March to July 2026.<br><a href="https://gibbsnwemadji.github.io/" rel="noreferrer">Homepage</a></p>
     </article>
     <article class="person-card">
-      <img src="{{ '/assets/images/members/gsommer.png' | relative_url }}" alt="Portrait of Grace M. Sommers." width="486" height="442">
+      <img src="{{ '/assets/images/members/gsommer.jpg' | relative_url }}" alt="Portrait of Grace M. Sommers." width="486" height="442">
       <h3>Grace M. Sommers</h3>
       <p>Postdoctoral scholar, 2026–present. Joint with Aleksander Kubica.<br><a href="https://scholar.google.com/citations?user=ChUE7jwAAAAJ&amp;hl=en" rel="noreferrer">Google Scholar</a></p>
     </article>
@@ -26,17 +26,17 @@ permalink: /group-members/
   <p class="people-intro">I am fortunate to supervise several excellent Ph.D. students:</p>
   <div class="people-grid">
     <article class="person-card">
-      <img src="{{ '/assets/images/members/ydevre.png' | relative_url }}" alt="Portrait of Yagiz Devre." width="800" height="800">
+      <img src="{{ '/assets/images/members/ydevre.jpg' | relative_url }}" alt="Portrait of Yagiz Devre." width="800" height="800">
       <h3>Yagiz Devre</h3>
       <p>Ph.D. student in Computer Science, 2026–present.<br><a href="https://ygzdvr.github.io/" rel="noreferrer">Homepage</a></p>
     </article>
     <article class="person-card">
-      <img src="{{ '/assets/images/members/mateo-cardenes-wuttig.jpg' | relative_url }}" alt="Portrait of Mateo Cárdenes Wuttig." width="5600" height="4000">
+      <img src="{{ '/assets/images/members/mateo-cardenes-wuttig.jpg' | relative_url }}" alt="Portrait of Mateo Cárdenes Wuttig." width="1120" height="800">
       <h3>Mateo Cárdenes Wuttig</h3>
       <p>Ph.D. student in Applied Physics, 2025–present. Co-advised with Joseph Tindall (Flatiron Institute).<br><a href="https://scholar.google.com/citations?user=gTaxN_EAAAAJ" rel="noreferrer">Google Scholar</a></p>
     </article>
     <article class="person-card">
-      <img src="{{ '/assets/images/members/hsun.jpeg' | relative_url }}" alt="Portrait of Haoran Sun." width="1667" height="1667">
+      <img src="{{ '/assets/images/members/hsun.jpeg' | relative_url }}" alt="Portrait of Haoran Sun." width="800" height="800">
       <h3>Haoran Sun</h3>
       <p>Ph.D. student in Applied Physics, 2025–present.<br><a href="https://scholar.google.com/citations?user=iW5bof4AAAAJ&amp;hl=en" rel="noreferrer">Google Scholar</a></p>
     </article>
