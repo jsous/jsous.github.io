@@ -5,7 +5,7 @@ lang: en
 baseurl: ""
 url: "https://jsous.github.io"
 permalink: pretty
-goatcounter_site: "jsous.goatcounter.com"
+goatcounter_site: "johnsous.goatcounter.com"
 
 exclude:
   - .bundle

@@ -77,8 +77,8 @@ Preview with `bundle exec jekyll serve`, then commit and push.
 
 ## GoatCounter
 
-- Visit tracking is set in `_config.yml` (`goatcounter_site: "jsous.goatcounter.com"`) and loaded in `_layouts/default.html`.
-- Stats are private, at https://jsous.goatcounter.com. There is no public visit counter on the site.
+- Visit tracking is set in `_config.yml` (`goatcounter_site: "johnsous.goatcounter.com"`) and loaded in `_layouts/default.html`.
+- Stats are private, at https://johnsous.goatcounter.com. There is no public visit counter on the site.
 - To turn tracking off, set `goatcounter_site: ""`.
 
 ## Useful Notes
